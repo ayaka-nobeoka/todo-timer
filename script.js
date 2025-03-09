@@ -25,26 +25,28 @@ function addTaskToDOM(task) {
     // タスクが追加されるやつの名前
     const taskText = document.createElement("span");
     taskText.textContent = task.text;  // task.text に変更
-
+    taskText.classList.add("task-text");
     // タイマー表示
     const timerDisplay = document.createElement("span");
     timerDisplay.textContent = `${task.time}分00秒`; // ⏳ ユーザーが選択した時間をセット
-
+    timerDisplay.classList.add("timer-display");
     // スタートボタン
     const startBtn = document.createElement("button");
-    startBtn.textContent = "スタート";
-
+    startBtn.textContent = "▶︎";
+    startBtn.classList.add("start-button");
     // ストップボタン
     const stopBtn = document.createElement("button");
-    stopBtn.textContent = "ストップ";
+    stopBtn.textContent = "◼︎";
+    stopBtn.classList.add("stop-button");
 
     // 一時停止ボタン
     const pauseBtn = document.createElement("button");
-    pauseBtn.textContent = "一時停止";
+    pauseBtn.textContent = "⏸";
+    pauseBtn.classList.add("pause-button");
 
     const deleteBtn = document.createElement("button");
-    deleteBtn.textContent = "削除";  // 削除ボタンの作成
-
+    deleteBtn.textContent = "";  // 削除ボタンの作成
+    deleteBtn.classList.add("delete-button");
     // タイマー機能
     let timeLeft = task.time * 60; // 25分を秒に変換←初期値
     let intervalId = null;

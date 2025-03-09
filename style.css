@@ -1,0 +1,80 @@
+body {
+    background-color: #f5f9fc;
+}
+.title {
+    color: #E3DEF1;
+    font-size: 100px;
+    text-align: center;
+}
+.todo-warapper {
+    display: block;
+    text-align: center;
+}
+.input-task {
+    width: 200px;
+    height: 30px;
+    border: 1px solid #dddddd;
+    box-shadow: 0px 0px 1px #dddddd;
+    margin-bottom: 5px;
+}
+.input-task:focus{
+    outline:#dddddd 2px solid;
+  }
+::placeholder {
+    color: #dddddd;
+  }
+.button-box {
+    color: #dddddd;
+}
+.input-time {
+    border: 1px solid #dddddd;
+    box-shadow: 0px 0px 1px #dddddd;
+    color: #dddddd;
+}
+.add-btn {
+    border: 1px solid #dddddd;
+    box-shadow: 0px 0px 1px #dddddd;
+    color: #d3d3d3;
+}
+.task-list {
+    width: 300px;
+    margin: 0 auto;
+}
+.task-text {
+    display: flex;
+    width: 230px;
+    border-bottom: 1px solid #dddddd;
+    padding: 5px;
+    text-align: left;
+    color: #adadad;
+}
+
+.timer-display {
+    color: #adadad;
+    margin: 15px;
+}
+.start-button {
+    border: none;
+    background-color: #f5f9fc;
+    color: #ff9393;
+}
+.stop-button {
+    border: none;
+    color: #9eceff;
+    background-color: #f5f9fc;
+}
+.pause-button {
+    border: none;
+    color: #ffc68e;
+    background-color: #f5f9fc;
+}
+.delete-button {
+    background-image: url(./img/delete_remove_bin_icon-icons.com_72400.png);
+    background-repeat: no-repeat;
+    background-size: contain; /* 画像をボタン内に収める */
+    width: 20px;
+    height: 20px;
+    border: none; /* ボーダーを消す */
+    background-color: transparent; /* 背景を透明にする */
+    cursor: pointer; /* クリック可能なカーソルにする */
+}
