@@ -17,7 +17,8 @@ body {
     box-shadow: 0px 0px 1px #dddddd;
     margin-bottom: 5px;
 }
-.input-task:focus{
+.input-task:focus,
+.input-time:focus {
     outline:#dddddd 2px solid;
   }
 ::placeholder {
@@ -34,7 +35,7 @@ body {
 .add-btn {
     border: 1px solid #dddddd;
     box-shadow: 0px 0px 1px #dddddd;
-    color: #d3d3d3;
+    color: #adadad;
 }
 .task-list {
     width: 300px;
